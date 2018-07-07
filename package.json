@@ -5,21 +5,24 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "ts-node src/index.ts"
+    "start": "tsc-watch --onSuccess \"ts-node src/index.ts \""
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "class-validator": "^0.8.5",
     "hapi": "^17.5.2",
-    "mongoose": "^5.2.1",
+    "lodash": "^4.17.10",
+    "pg": "^7.3.0",
     "reflect-metadata": "^0.1.10",
-    "typeorm": "0.2.7",
-    "pg": "^7.3.0"
+    "typeorm": "0.2.7"
   },
   "devDependencies": {
-    "ts-node": "3.3.0",
+    "@types/lodash": "^4.14.110",
     "@types/node": "^8.0.29",
+    "ts-node": "3.3.0",
+    "tsc-watch": "^1.0.22",
     "typescript": "2.5.2"
   }
 }
